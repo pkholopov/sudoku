@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sudoku {
+    display: grid;
+    grid-template: repeat(9, 1fr) / repeat(9, 1fr);
+    border: 1px solid lightgrey;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgrey;
+    color: rgb(99, 99, 99);
+    text-align: center;
+    font-size: 2rem;
+    outline: none;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.solve {
+    font-size: 1.5rem;
+    color: rgb(99, 99, 99);
+    padding: 10px 5px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition: all .4s;
+}
+
+.solve:hover {
+    background-color: rgb(214, 214, 214);
+}
